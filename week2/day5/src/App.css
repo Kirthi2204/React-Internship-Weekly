@@ -1,0 +1,45 @@
+.page {
+  min-height: 100vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #72b1c4;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  background: white;
+  width: 420px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  color:rgb(87, 14, 204);
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #dd7777;
+}
+
+li strong {
+  display: block;
+  color: #333;
+}
+
+li span {
+  font-size: 0.85rem;
+  color: #666;
+}
