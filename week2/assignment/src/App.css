@@ -1,0 +1,151 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: #e2b9db;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+  margin: 0;
+}
+
+.app {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 450px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3d10e0;
+}
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.todo-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list .controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-list .controls input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 5px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.filters button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.filters button:hover:not(.active) {
+  background: #b0b0b0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.todo-item:hover {
+  background: #f1f1f1;
+}
+
+.todo-item.completed .title {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item .title {
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.todo-item .description {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-left: 28px;
+}
+
+.todo-item .actions button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.todo-item .actions button:first-child {
+  background: #ffc107;
+  color: #fff;
+}
+
+.todo-item .actions button:first-child:hover {
+  background: #e0a800;
+}
+
+.todo-item .actions button:last-child {
+  background: #dc3545;
+  color: #fff;
+}
+
+.todo-item .actions button:last-child:hover {
+  background: #c82333;
+}
